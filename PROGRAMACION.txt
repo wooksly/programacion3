@@ -1,0 +1,39 @@
+'''html
+<!DOCTYPE html>
+<html lang"es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+	<title>Acceso Usuario</title>
+	<script>
+	function verificarAcceso() {
+	 // Variables con las credenciales guardadas
+		const usuarioGuardado = "usuario123";
+		cosnt contrasenaGuardada = "contrasena123";
+
+	// Obtener valores ingresados por el usuario
+		const usuarioIngresado =
+document.getElementByld("usuario").value;
+	const contrasenaIngresada = document.getElementByld("contrasena").value;
+
+	// Comparar las credenciales
+	if (usuarioIngresado ==
+usuarioGuardado && contrasenaIngresada
+==contrasenaGuardada){
+	alert("Acceso autorizado");
+	} else{
+	 alert("Acceso denegado");
+	 }
+	}
+ </script>
+</head>
+<body>
+	<h1>Ingreso de Usuario</h1>
+	<label for="usuario">Usuario:</label>
+	<input type="text"id="usuario" required>
+	<br>
+	<button onclick="verificarAcceso()">IniciarSesion</button>
+</body>
+</html>
