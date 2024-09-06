@@ -1,0 +1,24 @@
+'''javascript
+//Funcion para evaluar la nota
+function evaluarNota() {
+	//Pedir al usuario que ingrese la nota
+	let nota = prompt("Ingrese la nota del examen);
+
+	Convertir la entrada a un numero de nota = ParseFloat(nota);
+
+	//Verificar si la entrada es un numero valido
+	if (isNaN(notaa)) {
+	  alert("Por favor, ingrese una nota valida.");
+		return;
+	}
+	//Evaluar la nota y mostrar el mensaje correspondiente
+	if(nota >7) {
+		alert("Aprobado");
+	} else if(nota > 4) {
+		alert("Debe recuperar");
+	}else{
+		alert("Aplazo");
+	}
+}
+//Llamar a la funcion para ejecutar el programa
+evaluarNota();
