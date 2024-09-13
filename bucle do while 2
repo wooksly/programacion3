@@ -1,0 +1,12 @@
+function mostrarMensaje() {
+  let continuar = true;
+
+  while (continuar){
+    const respuesta =  prompt("¿Deseas continuar?(escribe 'si' o presiona 'Aceptar')");
+
+    if(respuesta === null||respuesta.toLowerCase()==='si'){
+      continuar = false; // Salir del bucle
+    }
+  }
+  alert("¡Has decidido continuar!");
+}
